@@ -1,0 +1,296 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--custom-white) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 80px !important;
+}
+
+.sliderContainer{
+    height: 80vh;
+    max-width: 100vw;
+    background-color: var(--green);
+    margin: 3rem 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bodySlide{
+  height: 80vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bodyText{
+  width: 80%;
+  height: 100%;
+  padding: 0 6rem;
+  color: var(--custom-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bodyText > h3{
+  font-size: 6rem;
+  margin: 0 0;
+}
+
+.bodyText > p {
+  font-size: 2rem;
+  width: 80%;
+}
+
+
+.bodySlide > img{
+  height: 100%;
+  width: auto;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .bodySlide{
+    height: 80vh;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .bodyText{
+    width: 80%;
+    height: 100%;
+    padding: 0 4rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .bodyText > h3{
+    font-size: 3rem;
+    margin: 0 0;
+  }
+  
+  .bodyText > p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  
+  
+  .bodySlide > img{
+    height: 100%;
+    width: auto;
+  }
+}
+
+
+  /* Tablets pequeñas (768px a 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .bodySlide{
+      height: 80vh;
+      width: 100%;
+    
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .bodyText{
+      width: 80%;
+      height: 100%;
+      padding: 0 4rem;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    .bodyText > h3{
+      font-size: 4rem;
+      margin: 0 0;
+    }
+    
+    .bodyText > p {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+    
+    
+    .bodySlide > img{
+      height: 100%;
+      width: auto;
+    }
+
+  }
+
+    /* Móviles grandes (576px a 768px) */
+    @media (min-width: 576px) and (max-width: 768px) {
+      .bodySlide{
+        height: 80vh;
+        width: 100%;
+      
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      
+      .bodyText{
+        width: 80%;
+        height: 100%;
+        padding: 0 4rem;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      
+      .bodyText > h3{
+        font-size: 3rem;
+        margin: 0 0;
+      }
+      
+      .bodyText > p {
+        font-size: 1.1rem;
+        width: 100%;
+      }
+      
+      
+      .bodySlide > img{
+        height: 100%;
+        width: auto;
+      }
+
+    }
+
+      /* Móviles pequeños (menor a 576px) */
+  @media (max-width: 575px) {
+    .sliderContainer{
+      height: auto;
+      max-width: 100vw;
+      margin: 3rem 0;
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  
+  .bodySlide{
+    height: auto;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .bodyText{
+    width: 100%;
+    margin: 1rem 0;
+    height: auto;
+    padding: 0 6rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bodyText > h3{
+    font-size: 2.2rem;
+    margin: 0 0;
+  }
+  
+  .bodyText > p {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .bodySlide > img{
+    height: 100px;
+    width: 100px;
+  }
+  }
+
+    /* dispositivos muy pequenos como iphone 5 */
+    @media (min-width: 320px) and (max-width: 568px) {
+      .sliderContainer{
+        height: auto;
+        max-width: 100vw;
+        margin: 3rem 0;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .bodySlide{
+      height: 80vh;
+      width: 100%;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .bodyText{
+      width: 100%;
+      margin: 1rem 0;
+      height: auto;
+      padding: 0 6rem;
+      color: var(--custom-white);
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .bodyText > h3{
+      font-size: 2.2rem;
+      margin: 0 0;
+    }
+    
+    .bodyText > p {
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+    
+    
+    .bodySlide > img{
+      height: auto;
+      width: 100%;
+    }
+
+    }

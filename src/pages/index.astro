@@ -2,11 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Main from '../components/astroComponents/Main.astro';
 import BannerExperiencia from '../components/astroComponents/BannerExperiencia.astro';
+import Slider from '../components/reactComponents/Slider';
 ---
 
 <Layout>
 	<Main/>
 	<BannerExperiencia/>
+	<Slider client:load/>
 </Layout>
 
 <style>
