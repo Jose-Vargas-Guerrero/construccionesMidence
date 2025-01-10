@@ -1,0 +1,204 @@
+---
+import valores1 from "../../images/valores1.png";
+import valores2 from "../../images/valores2.png";
+import valores3 from "../../images/valores3.png";
+import valores4 from "../../images/valores4.png";
+import valores5 from "../../images/valores5.png";
+import valores6 from "../../images/valores6.png";
+import valores7 from "../../images/valores7.png";
+import valores8 from "../../images/valores8.png";
+---
+
+<div class="metodologiaContainer">
+  <h2>Metodología de Trabajo</h2>
+  <div class="metodologias">
+    <div class="card">
+      <img src={valores1.src} />
+      <p>Identificar las necesidades del cliente</p>
+    </div>
+    <div class="card">
+      <img src={valores2.src} />
+      <p>Construir Confianza y Transparencia</p>
+    </div>
+    <div class="card">
+      <img src={valores3.src} />
+      <p>Diseño personalizado y soluciones adaptadas</p>
+    </div>
+    <div class="card">
+      <img src={valores4.src} />
+      <p>Planificación y preparación de la Obra</p>
+    </div>
+    <div class="card">
+      <img src={valores5.src} />
+      <p>Ejecución con Calidad y Compromiso</p>
+    </div>
+    <div class="card">
+      <img src={valores6.src} />
+      <p>Control de Calidad y Cumplimiento</p>
+    </div>
+    <div class="card">
+      <img src={valores7.src} />
+      <p>Entrega y Satisfacción del Cliente</p>
+    </div>
+    <div class="card">
+      <img src={valores8.src} />
+      <p>Garantía y soporte Post- Construcción</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .metodologiaContainer {
+    height: auto;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .metodologiaContainer > h2 {
+    color: var(--green);
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .metodologias {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .card > p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  .card > img {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* Móviles grandes (576px a 768px) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .metodologiaContainer {
+      height: auto;
+      max-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .metodologiaContainer > h2 {
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .metodologias {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .card > p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 70%;
+      text-align: center;
+    }
+  }
+
+  /* Móviles pequeños (menor a 576px) */
+  @media (max-width: 575px) {
+    .metodologiaContainer {
+      height: auto;
+      max-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .metodologiaContainer > h2 {
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .metodologias {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .card > p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 70%;
+      text-align: center;
+    }
+  }
+
+  /* dispositivos muy pequenos como iphone 5 */
+  @media (min-width: 320px) and (max-width: 568px) {
+    .metodologiaContainer > h2 {
+      color: var(--green);
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .metodologias {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .card > p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+</style>
