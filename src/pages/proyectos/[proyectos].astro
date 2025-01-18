@@ -1,0 +1,77 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProyectoSlider from "../../components/reactComponents/ProyectoSlider";
+
+import data from "../../data/data";
+
+export async function getStaticPaths() {
+  const info = data;
+
+  return info.map((p) => {
+    return {
+      params: { proyectos: p.enlace },
+      props: p,
+    };
+  });
+}
+
+const { proyectos } = Astro.params;
+const p = Astro.props;
+---
+
+<Layout>
+  <div>
+    <ProyectoSlider client:load
+      image1={p.image1}
+      image2={p.image2}
+      image3={p.image3}
+      image4={p.image4}
+      image5={p.image5}
+      image6={p.image6}
+      image7={p.image7}
+      image8={p.image8}
+      image9={p.image9}
+      image10={p.image10}
+    />
+    <div class="proyectoBox">
+      <h1>{p.nombre}</h1>
+      <p>
+        Lorem ipsum dolor sit amet Semper nullam vulputate porta pellentesque
+        quis vulputate sit libero ultricies. Rutrum id eu donec nunc scelerisque
+        dictumst mauris eget sit. Nulla duis ac sit vitae sit dictumst.
+      </p>
+    </div>
+  </div>
+</Layout>
+
+
+<style>
+  .proyectoBox{
+    height: 80vh;
+    width: 100%;
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .proyectoBox > h1{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 3.7rem;
+  }
+
+  .proyectoBox > p {
+    width: 70%;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .proyectoBox > p::selection{
+   background-color: var(--green);
+   color: var(--custom-white );
+  }
+</style>

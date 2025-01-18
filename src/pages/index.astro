@@ -5,6 +5,8 @@ import BannerExperiencia from '../components/astroComponents/BannerExperiencia.a
 import Slider from '../components/reactComponents/Slider';
 import NuestrosValores from '../components/astroComponents/NuestrosValores.astro';
 import Metodologia from '../components/astroComponents/Metodologia.astro';
+import NuestrosServicios from '../components/astroComponents/NuestrosServicios.astro';
+import Proyectos from '../components/reactComponents/Proyectos';
 ---
 
 <Layout>
@@ -13,6 +15,8 @@ import Metodologia from '../components/astroComponents/Metodologia.astro';
 	<Slider client:load/>
 	<NuestrosValores/>
 	<Metodologia/>
+	<NuestrosServicios/>
+	<Proyectos client:load/>
 </Layout>
 
 <style>

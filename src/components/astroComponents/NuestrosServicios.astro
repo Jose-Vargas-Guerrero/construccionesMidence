@@ -1,0 +1,227 @@
+---
+import servicio1 from "../../images/servicio2.png";
+import servicio2 from "../../images/servicio1.jpg";
+import servicio3 from "../../images/servicio3.png";
+---
+
+<div class="serviciosContainer">
+  <h2>Nuestros servicios</h2>
+  <div class="servicioBox">
+    <div class="servicioInfo">
+      <h3>Construcción</h3>
+      <p>
+        En Construcciones Midence, brindamos un servicio integral que incluye
+        planificación, ejecución y entrega de proyectos de obra civil. Nos
+        enfocamos en calidad, cumplimiento de plazos y optimización de costos,
+        superando las expectativas de nuestros clientes.
+      </p>
+    </div>
+    <img src={servicio1.src} class="servicioImage" />
+  </div>
+  <div class="servicioBoxReverse">
+    <div class="servicioInfo">
+      <h3>Supervisión</h3>
+      <p>
+        Esta línea responde a una necesidad creciente de asegurar la calidad y
+        cumplimiento de estándares en proyectos de construcción, desde el
+        anteproyecto hasta la entrega final
+      </p>
+    </div>
+    <img src={servicio2.src} class="servicioImage" />
+  </div>
+  <div class="servicioBox">
+    <div class="servicioInfo">
+      <h3>Diseño arquitectónico</h3>
+      <p>
+        Somos tu socio estratégico en diseño. Entendemos que cada proyecto tiene
+        una historia única y una necesidad particular. Te acompañamos en cada
+        paso asegurando calidad y estilo en cada detalle.
+      </p>
+    </div>
+    <img src={servicio3.src} class="servicioImage" />
+  </div>
+</div>
+
+<style>
+  .serviciosContainer {
+    margin: 4rem 0;
+    height: auto;
+    max-width: 100vw;
+    margin: 8rem 0;
+  }
+
+  .serviciosContainer > h2 {
+    color: var(--green);
+    margin-bottom: 8rem ;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .servicioBox{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicioBoxReverse{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicioImage{
+    width: 50%;
+  }
+
+  .servicioInfo{
+    max-width: 50%;
+  }
+
+  .servicioInfo > h3{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin-left: 2rem;
+  }
+
+  .servicioInfo > p{
+    width: 90%;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    line-height: 1.4;
+  }
+
+
+  @media (min-width: 770px) and (max-width: 999px){
+
+  .servicioImage{
+    width: 50%;
+  }
+
+  .servicioInfo{
+    max-width: 50%;
+  }
+
+  .servicioInfo > h3{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin: 0 2rem;
+  }
+
+  .servicioInfo > p{
+    width: 90%;
+    font-size: 1rem;
+    margin-left: 2rem;
+    line-height: 1.4;
+  }
+  }
+
+  /* Móviles grandes (576px a 768px) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .serviciosContainer > h2 {
+    margin-bottom: 4rem ;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .servicioBox{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicioBoxReverse{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicioImage{
+    width: 100%;
+  }
+
+  .servicioInfo{
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .servicioInfo > h3{
+    text-align: center;
+    font-size: 3.4rem;
+    margin-left: 0rem;
+  }
+
+  .servicioInfo > p{
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+  }
+
+
+
+  /* dispositivos muy pequenos como iphone 5 */
+  @media (min-width: 320px) and (max-width: 568px) {
+    
+  .serviciosContainer > h2 {
+    margin-bottom: 4rem ;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .servicioBox{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicioBoxReverse{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicioImage{
+    width: 100%;
+  }
+
+  .servicioInfo{
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .servicioInfo > h3{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-left: 0rem;
+  }
+
+  .servicioInfo > p{
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 0rem;
+  }
+  }
+</style>
