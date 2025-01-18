@@ -1,0 +1,43 @@
+.proyectoCard{
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.proyectoImage{
+    height: 100%;
+    width: 100%;
+}
+
+.proyectoName{
+    width: 60%;
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    background-color: var(--green);
+    color: var(--custom-white);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    z-index: 8;
+}
+
+.overlay{
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(138, 199, 62, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
