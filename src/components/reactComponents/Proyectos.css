@@ -60,3 +60,77 @@
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
+
+  /* Móviles grandes (576px a 768px) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .proyectosContainer{
+        max-width: 100vw;
+        height: auto;
+
+        margin-bottom: 8rem;
+    }
+    
+    .proyectosContainer > h3{
+        margin-bottom: 5rem ;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    .filterContainer{
+        text-align: center;
+    }
+    
+    
+    .filterContainer > label{
+        font-size: 1.3rem;
+    }
+    
+    .filterContainer > option{
+        background-color: none;
+        font-size: 4rem;
+    }
+    
+    .proyectosList{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* dispositivos muy pequenos como iphone 5 */
+  @media (min-width: 320px) and (max-width: 568px) {
+    .proyectosContainer{
+        max-width: 100vw;
+        height: auto;
+
+        margin-bottom: 8rem;
+    }
+    
+    .proyectosContainer > h3{
+        margin-bottom: 5rem ;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    .filterContainer{
+        text-align: center;
+    }
+    
+    
+    .filterContainer > label{
+        font-size: 1.3rem;
+    }
+    
+    .filterContainer > option{
+        background-color: none;
+        font-size: 4rem;
+    }
+    
+    .proyectosList{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+  }
