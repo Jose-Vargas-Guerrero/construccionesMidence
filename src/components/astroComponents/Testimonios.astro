@@ -1,0 +1,264 @@
+---
+import user from "../../images/user.jpg";
+---
+
+<div class="TestimoniosContainer">
+  <div class="titles">
+    <h3>La voz de quienes ya</h3>
+    <h2>Confiaron en nosotros</h2>
+  </div>
+  <div class="testimonies">
+    <div class="card">
+      <img class="user" src={user.src} />
+      <h3>Nancy Espinal</h3>
+      <p>
+        Gracias a Construcciones Midence, logramos un diseño que optimiza el
+        espacio y superó nuestras expectativas. Ahora tenemos un entorno hermoso
+        y funcional.
+      </p>
+    </div>
+    <div class="card">
+      <img class="user" src={user.src} />
+      <h3>Nancy Espinal</h3>
+      <p>
+        Gracias a Construcciones Midence, logramos un diseño que optimiza el
+        espacio y superó nuestras expectativas. Ahora tenemos un entorno hermoso
+        y funcional.
+      </p>
+    </div>
+    <div class="card">
+      <img class="user" src={user.src} />
+      <h3>Nancy Espinal</h3>
+      <p>
+        Gracias a Construcciones Midence, logramos un diseño que optimiza el
+        espacio y superó nuestras expectativas. Ahora tenemos un entorno hermoso
+        y funcional.
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .titles > h3 {
+    text-align: center;
+    color: var(--green);
+    font-size: 3rem;
+    margin: 0 0;
+  }
+
+  .titles > h2 {
+    text-align: center;
+    color: var(--green);
+    font-size: 5rem;
+    margin: 0 0;
+    letter-spacing: 3px;
+  }
+
+  .testimonies {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 400px;
+    width: 300px;
+    background-color: var(--blue);
+    color: var(--custom-white);
+    border-radius: 10px;
+    padding: 0 0.8rem;
+    margin: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition:
+      background-color ease-in 0.2s,
+      color ease-in 0.2s;
+  }
+
+  .card:hover {
+    background-color: var(--green);
+    color: var(--black);
+  }
+
+  .card > h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+  }
+
+  .card > p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .user {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  /* Tablets pequeñas (768px a 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .titles > h3 {
+    font-size: 2.5rem;
+  }
+
+  .titles > h2 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin: 0 0.5rem;
+  }
+
+  .testimonies {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: auto;
+    width: 280px;
+    padding: 1rem 0.8rem;
+    margin: 1rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .card > h3 {
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .card > p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .user {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .titles > h3 {
+    font-size: 2.2rem;
+  }
+
+  .titles > h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0 0.5rem;
+  }
+
+  .testimonies {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: auto;
+    width: 280px;
+    padding: 1rem 0.8rem;
+    margin: 1rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .card > h3 {
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .card > p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .user {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+    
+}
+
+  /* Móviles pequeños (menor a 576px) */
+  @media (max-width: 575px) {
+    .titles > h3 {
+    font-size: 1.5rem;
+  }
+
+  .titles > h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0 0.5rem;
+  }
+
+  .testimonies {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: auto;
+    width: 280px;
+    padding: 1rem 0.8rem;
+    margin: 1rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .card > h3 {
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .card > p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .user {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+  }
+
+</style>

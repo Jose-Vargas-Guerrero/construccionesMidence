@@ -32,7 +32,7 @@ function Proyectos() {
         <div className='proyectosList'>
             {
                 filteredProyectos.map((e) => (
-                    <Preview enlace={e.enlace} name={e.nombre}
+                    <Preview key={e.id} enlace={e.enlace} name={e.nombre}
                     image={e.image1}/>
                 ))
             }

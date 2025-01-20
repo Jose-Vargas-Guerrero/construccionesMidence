@@ -7,16 +7,22 @@ import NuestrosValores from '../components/astroComponents/NuestrosValores.astro
 import Metodologia from '../components/astroComponents/Metodologia.astro';
 import NuestrosServicios from '../components/astroComponents/NuestrosServicios.astro';
 import Proyectos from '../components/reactComponents/Proyectos';
+import Testimonios from '../components/astroComponents/Testimonios.astro';
+import Contacto from '../components/astroComponents/Contacto.astro';
+import Formulario from '../components/reactComponents/Formulario';
 ---
 
 <Layout>
 	<Main/>
 	<BannerExperiencia/>
 	<Slider client:load/>
-	<NuestrosValores/>
+	<!-- <NuestrosValores/> -->
 	<Metodologia/>
 	<NuestrosServicios/>
 	<Proyectos client:load/>
+	<Testimonios/>
+	<Contacto/>
+	<Formulario client:load/>
 </Layout>
 
 <style>

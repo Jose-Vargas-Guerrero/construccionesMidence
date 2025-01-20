@@ -12,32 +12,26 @@ import plant from '../../images/plant.png'
     <h2>Nuestros valores</h2>
     <div class="cardContainer">
         <div class="card">
-            <strong>1</strong>
             <img src={usersGroup.src}/>
             <p>Trabajo en quipo</p>
         </div>
         <div class="card">
-            <strong>2</strong>
             <img src={presentation.src}/>
             <p>Innovación</p>
         </div>
         <div class="card">
-            <strong>3</strong>
             <img src={basket.src}/>
             <p>Excelencia</p>
         </div>
         <div class="card">
-            <strong>4</strong>
             <img src={home.src}/>
             <p>Integridad</p>
         </div>
         <div class="card">
-            <strong>5</strong>
             <img src={users.src}/>
             <p>Desarrollo Humano</p>
         </div>
         <div class="card">
-            <strong>6</strong>
             <img src={plant.src}/>
             <p>Sostenibilidad</p>
         </div>
@@ -83,7 +77,7 @@ import plant from '../../images/plant.png'
 
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         border-radius: 20px;
         height: 300px;
@@ -94,10 +88,7 @@ import plant from '../../images/plant.png'
     .card > img{
         height: 100px;
         width: 100px;
-    }
-
-    .card > strong{
-        font-size: 2rem;
+        margin: 0 0;
     }
 
     .card > p{
@@ -105,6 +96,7 @@ import plant from '../../images/plant.png'
         font-size: 2rem;
         width: 80%;
         text-align: center;
+        margin: 1rem 0;
     }
 
 
