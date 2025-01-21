@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import slide1 from "/src/images/hero.jpg";
 
 function ProyectoSlider({
   image1,
@@ -23,7 +22,7 @@ function ProyectoSlider({
         <Swiper
           modules={[Navigation]}
           spaceBetween={0}
-          slidesPerView={2}
+          slidesPerView={1}
           navigation
         >
           {!image1 ? null : (

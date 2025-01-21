@@ -74,4 +74,90 @@ const p = Astro.props;
    background-color: var(--green);
    color: var(--custom-white );
   }
+
+
+  @media (min-width: 1024px) and (max-width: 1200px) {
+}
+
+/* Tablets pequeñas (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .proyectoBox{
+    height: auto;
+    width: 100%;
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyectoBox > h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.7rem;
+  }
+
+  .proyectoBox > p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+/* Móviles grandes (576px a 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .proyectoBox{
+    height: auto;
+    width: 100%;
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyectoBox > h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.7rem;
+  }
+
+  .proyectoBox > p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+  /* Móviles pequeños (menor a 576px) */
+@media (max-width: 575px) {
+  .proyectoBox{
+    height: auto;
+    width: 100%;
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyectoBox > h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.7rem;
+  }
+
+  .proyectoBox > p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+}
 </style>

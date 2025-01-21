@@ -99,5 +99,36 @@ import plant from '../../images/plant.png'
         margin: 1rem 0;
     }
 
+      /* dispositivos muy pequenos como iphone 5 */
+  @media (min-width: 320px) and (max-width: 568px) {
+    .nuestrosValores > h2{
+        font-size: 4rem;
+    }
+
+    .cardContainer{
+        height: 100%;
+        width: 80%;
+        
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));   
+        justify-items: center;
+        gap: 40px;  
+        margin-bottom: 6rem;   
+
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 260px;
+        width: 260px;
+    }
+
+  }
+
 
 </style>
