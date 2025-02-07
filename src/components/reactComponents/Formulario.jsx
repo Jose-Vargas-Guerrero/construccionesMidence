@@ -2,7 +2,7 @@ import './Formulario.css'
 
 function Formulario() {
   return (
-    <div className='formularoContainer'>
+    <div className='formularoContainer' id='formulario'>
         <h2>Trabaja con nosotros</h2>
         <h3>Alguien de nuestro equipo de asesorará</h3>
         <form className='formulario'>

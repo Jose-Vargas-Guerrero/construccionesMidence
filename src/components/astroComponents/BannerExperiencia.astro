@@ -1,7 +1,7 @@
 <div class="bannerContainer">
   <div class="bannerContent">
     <div class="fade">
-      <h2 class="title"><span>+25</span> años de experiencia</h2>
+      <h2 class="title animate__animated animate__fadeInLeft"><span>+25</span> años de experiencia</h2>
     </div>
   </div>
 </div>
@@ -45,11 +45,18 @@
   .title {
     color: var(--custom-white);
     font-size: 6rem;
+    cursor: default;
+    transition: scale ease-in-out 0.4s;
   }
 
   .title > span {
     color: var(--green);
   }
+
+  .title:hover{
+    scale: 1.1;
+  }  
+
 
   @media (min-width: 1024px) and (max-width: 1200px) {
     .bannerContainer {
