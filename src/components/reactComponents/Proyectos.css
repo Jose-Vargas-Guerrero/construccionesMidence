@@ -3,6 +3,7 @@
 }
 
 .proyectosContainer > h3{
+    font-family: 'Times New Roman', Times, serif;
     color: var(--green);
     margin-bottom: 8rem ;
     font-size: 5rem;

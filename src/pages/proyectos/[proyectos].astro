@@ -35,11 +35,7 @@ const p = Astro.props;
     />
     <div class="proyectoBox">
       <h1>{p.nombre}</h1>
-      <p>
-        Lorem ipsum dolor sit amet Semper nullam vulputate porta pellentesque
-        quis vulputate sit libero ultricies. Rutrum id eu donec nunc scelerisque
-        dictumst mauris eget sit. Nulla duis ac sit vitae sit dictumst.
-      </p>
+      <p>{p.descripcion}</p>
     </div>
   </div>
 </Layout>
@@ -60,13 +56,13 @@ const p = Astro.props;
   .proyectoBox > h1{
     color: var(--green);
     font-weight: bold;
-    font-size: 3.7rem;
+    font-size: 3.8rem;
   }
 
   .proyectoBox > p {
     width: 70%;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
 

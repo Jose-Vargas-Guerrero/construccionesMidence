@@ -10,12 +10,14 @@
 }
 
 .formularoContainer > h2 {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 4rem;
   color: var(--green);
   margin: 0 0;
 }
 
 .formularoContainer > h3 {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1.8rem;
   color: var(--green);
 }

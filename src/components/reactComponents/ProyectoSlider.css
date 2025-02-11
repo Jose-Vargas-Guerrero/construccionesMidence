@@ -1,6 +1,6 @@
 .swiper-button-next,
 .swiper-button-prev {
-  color: white !important;
+  color: var(--green) !important;
 }
 
 .swiper-button-next::after,
@@ -27,7 +27,7 @@
 .proyectoSlide {
   height: 80vh;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position:center;
 }
 

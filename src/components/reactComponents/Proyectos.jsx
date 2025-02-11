@@ -20,8 +20,8 @@ function Proyectos() {
     <div className='proyectosContainer'>
         <h3>Proyectos</h3>
         <div className='filterContainer'>
-            <label>Filtrar por: </label>
-            <select onChange={handleChange}>
+            <label for="filter" title='elemento para seleccionar filtro'>Filtrar por: </label>
+            <select name='filter' id="filter" title='seleccionar el tipo de construccion para proyectos' onChange={handleChange}>
                 <option value="">Todos</option>
                 <option value="Edificios">Edificios</option>
 {/*                 <option value="Residenciales">Residenciales</option> */}

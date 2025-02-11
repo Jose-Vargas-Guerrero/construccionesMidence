@@ -5,7 +5,7 @@ import servicio3 from "../../images/servicio3.png";
 ---
 
 <div class="serviciosContainer">
-  <h2>Nuestros servicios</h2>
+  <h2>Servicios</h2>
   <div class="servicioBox">
     <div class="servicioInfo">
       <h3>Construcción</h3>
@@ -16,7 +16,7 @@ import servicio3 from "../../images/servicio3.png";
         superando las expectativas de nuestros clientes.
       </p>
     </div>
-    <img src={servicio1.src} class="servicioImage" />
+    <img src={servicio1.src} class="servicioImage" alt="nuestro servicio de construccion" loading="lazy"/>
   </div>
   <div class="servicioBoxReverse">
     <div class="servicioInfo">
@@ -27,7 +27,7 @@ import servicio3 from "../../images/servicio3.png";
         anteproyecto hasta la entrega final
       </p>
     </div>
-    <img src={servicio2.src} class="servicioImage" />
+    <img src={servicio2.src} class="servicioImage" alt="nuestro servicio de supervision" loading="lazy"/>
   </div>
   <div class="servicioBox">
     <div class="servicioInfo">
@@ -38,7 +38,7 @@ import servicio3 from "../../images/servicio3.png";
         paso asegurando calidad y estilo en cada detalle.
       </p>
     </div>
-    <img src={servicio3.src} class="servicioImage" />
+    <img src={servicio3.src} class="servicioImage" alt="nuestro servicio de diseño arquitectonico" loading="lazy"/>
   </div>
 </div>
 
@@ -51,6 +51,7 @@ import servicio3 from "../../images/servicio3.png";
   }
 
   .serviciosContainer > h2 {
+    font-family: 'Times New Roman', Times, serif;
     color: var(--green);
     margin-bottom: 8rem ;
     font-size: 5rem;
@@ -64,6 +65,15 @@ import servicio3 from "../../images/servicio3.png";
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: background-color ease 0.3s, color ease 0.3s;
+  }
+
+  .servicioBox:hover{
+    background-color: var(--green);
+  }
+
+  .servicioBox:hover h3{
+    color: white;
   }
 
   .servicioBoxReverse{
@@ -73,6 +83,16 @@ import servicio3 from "../../images/servicio3.png";
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    transition: background-color ease 0.3s, color ease 0.3s;
+  }
+
+  
+  .servicioBoxReverse:hover{
+    background-color: var(--green);
+  }
+
+  .servicioBoxReverse:hover h3{
+    color: white;
   }
 
   .servicioImage{
